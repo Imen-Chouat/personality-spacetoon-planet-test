@@ -7,7 +7,9 @@ export default function Layout({ children }) {
   return (
     <Background>
       <Header />
-      {children}
+      <div className="w-full flex-grow pt-24 flex flex-col justify-between">
+        {children}
+      </div>
       <Footer />
     </Background>
   );

@@ -21,9 +21,8 @@ export default function Header() {
   };
 
   return (
-    <header className="w-full py-4 px-6 border-b border-white/10 bg-slate-950/40 backdrop-blur-md z-50 sticky top-0 flex justify-between items-center shadow-lg">
+    <header className="fixed top-0 left-0 w-full py-4 px-6 border-b border-white/10 bg-slate-950/60 backdrop-blur-md z-[100] flex justify-between items-center shadow-lg">
       
-      {/* LEFT: Branding Interactive Image Gate */}
       <div className="flex-1 flex justify-start items-center">
         <div className="flex items-center gap-3 select-none">
           <img 
@@ -31,14 +30,11 @@ export default function Header() {
             alt="Astrotech Logo" 
             className="h-10 md:h-12 w-auto object-contain drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]"
             onError={(e) => {
-              // Graceful textual fallback badge if the logo image file isn't uploaded yet
               e.target.style.display = 'none';
             }}
           />
         </div>
       </div>
-
-      {/* CENTER: Multi-Language Slogan */}
       <div className="hidden sm:flex flex-1 justify-center text-center px-4">
         <p 
           className={`text-cyan-400 text-sm md:text-base font-bold italic transition-all duration-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] ${getHeadingFont()}`}
@@ -47,8 +43,6 @@ export default function Header() {
           "{slogans[lang]}"
         </p>
       </div>
-
-      {/* RIGHT: Arcade Capsule Button Toggles with matching theme accents */}
       <div className="flex-1 flex justify-end items-center">
         <div className="flex items-center bg-slate-950/60 p-1.5 rounded-2xl border border-white/5 gap-2 shadow-inner">
           {languageOptions.map((opt) => {

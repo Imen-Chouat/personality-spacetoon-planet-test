@@ -5,11 +5,6 @@ export default function Footer() {
       <h3 className="text-xl font-bold text-white tracking-widest mb-5 font-nasalization select-none">
         Astrotech
       </h3>
-
-      {/* 
-        Responsive Social Stack:
-        The gap scales from 24px (mobile) to 48px (tablets) up to 64px on wide PC screens.
-      */}
       <div className="flex justify-center items-center gap-6 sm:gap-12 md:gap-16 text-slate-400 max-w-xl mx-auto px-4">
         
         {/* Instagram */}
