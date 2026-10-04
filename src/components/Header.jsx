@@ -21,40 +21,45 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full py-0 px-6 border-b border-white/10 bg-slate-950/60 backdrop-blur-md z-[100] flex justify-between items-center shadow-lg">
+    <header className="fixed top-0 left-0 w-full py-1 px-4 sm:px-6 border-b border-white/10 bg-slate-950/60 backdrop-blur-md z-[100] flex justify-between items-center shadow-lg">
       
+      {/* Left Logo */}
       <div className="flex-1 flex justify-start items-center">
         <div className="flex items-center gap-3 select-none">
           <img 
             src="/logo.png" 
             alt="Astrotech Logo" 
-            className="h-10 md:h-12 w-auto object-contain drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]"
+            className="h-8 sm:h-10 md:h-11 w-auto object-contain drop-shadow-[0_0_10px_rgba(34,211,238,0.3)]"
             onError={(e) => {
               e.target.style.display = 'none';
             }}
           />
         </div>
       </div>
+
+      {/* Middle Slogan */}
       <div className="hidden sm:flex flex-1 justify-center text-center px-4">
         <p 
-          className={`text-cyan-400 text-sm md:text-base font-bold italic transition-all duration-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] ${getHeadingFont()}`}
+          className={`text-cyan-400 text-xs sm:text-sm md:text-base font-bold italic transition-all duration-300 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] ${getHeadingFont()}`}
           key={lang}
         >
           "{slogans[lang]}"
         </p>
       </div>
+
+      {/* Right Compact Language Switcher */}
       <div className="flex-1 flex justify-end items-center">
-        <div className="flex items-center bg-slate-950/60 p-1 rounded-2xl border border-white/5 gap-2 shadow-inner">
+        <div className="flex items-center bg-slate-950/70 p-0.5 sm:p-1 rounded-xl border border-white/10 gap-1 shadow-inner">
           {languageOptions.map((opt) => {
             const isActive = lang === opt.code;
             return (
               <button
                 key={opt.code}
                 onClick={() => changeLanguage(opt.code)}
-                className={`px-4 py-2 rounded-xl text-sm font-black font-mono tracking-wider transition-all duration-300 cursor-pointer ${
+                className={`px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-lg text-xs font-black font-mono tracking-wider transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? 'bg-cyan-400 text-slate-950 shadow-md scale-100'
-                    : 'bg-slate-900/60 text-slate-500 hover:text-slate-300 hover:bg-slate-800/40'
+                    ? 'bg-cyan-400 text-slate-950 shadow-sm scale-100'
+                    : 'bg-transparent text-slate-400 hover:text-slate-200 hover:bg-white/5'
                 }`}
               >
                 {opt.label}
