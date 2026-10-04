@@ -2,40 +2,40 @@ export const questions = [
   {
     id: 1,
     text: {
-      en: "Oh no! A giant meteor is hurtling toward Earth! What is your immediate cartoon counter-attack?",
-      ar: "كارثة! نيزك عملاق يتجه نحو الأرض بسرعة! ما هي خطتك الكرتونية الخارقة للتصدي له؟",
-      fr: "Oh non ! Un météore géant fonce vers la Terre ! Quelle est ta contre-attaque de dessin animé ?"
+      en: "A meteor is hurtling toward Earth! What's your counter-attack?",
+      ar: "نيزك يتجه نحو الأرض! كيف تتصدى له؟",
+      fr: "Un météore fonce sur la Terre ! Ta contre-attaque ?"
     },
     options: [
       {
         text: {
-          en: "Scream for 3 straight episodes until my hair turns glowing gold and punch it.",
-          ar: "أصرخ لـ 3 حلقات متتالية حتى يتحول شعري للّون الذهبي المشع ثم ألكمه.",
-          fr: "Crier pendant 3 épisodes complets jusqu'à ce que mes cheveux deviennent dorés et le frapper."
+          en: "Power up for 3 episodes, go Super Saiyan, and punch it.",
+          ar: "أصرخ لـ 3 حلقات حتى يضيء شعري ذهبياً وألكمه.",
+          fr: "Crier pendant 3 épisodes, passer en Super Saiyan et le frapper."
         },
         scores: { action: 2 }
       },
       {
         text: {
-          en: "Kick a blazing soccer ball straight into the meteor to redirect it into the sun.",
-          ar: "أركل كرة قدم مشتعلة مباشرة نحو النيزك لتغيير مساره نحو الشمس.",
-          fr: "Taper dans un ballon de foot en feu directement sur le météore pour le renvoyer sur le soleil."
+          en: "Kick a fiery soccer ball to blast it into the sun.",
+          ar: "أركل كرة قدم مشتعلة لتحرف مساره نحو الشمس.",
+          fr: "Taper dans un ballon enflammé pour l'envoyer sur le soleil."
         },
         scores: { sport: 2 }
       },
       {
         text: {
-          en: "Adjust my glasses, smirk, and activate my anti-meteor giant laser satellite.",
-          ar: "أعدل نظاراتي الذكية، أبتسم بثقة، وأفعل قمرًا صناعيًا عملاقًا ليزريًا مضادًا للنيازك.",
-          fr: "Ajuster mes lunettes, sourire intelligemment et activer mon satellite laser géant anti-météore."
+          en: "Adjust my glasses and fire a anti-meteor orbital laser.",
+          ar: "أعدل نظارتي وأفعل ليزر فضائياً مضاداً للنيازك.",
+          fr: "Ajuster mes lunettes et tirer au laser orbital."
         },
         scores: { science: 2 }
       },
       {
         text: {
-          en: "Pack a backpack, grab an old map, and jump into a mysterious portal to find a new home.",
-          ar: "أحزم حقيبتي، آخذ خريطة قديمة، وأقفز في بوابة غامضة للبحث عن موطن جديد.",
-          fr: "Préparer un sac à dos, prendre une vieille carte et sauter dans un portail mystérieux."
+          en: "Grab a map and leap into a portal to find a new home.",
+          ar: "آخذ خريطة وأقفز في بوابة غامضة لننتقل لكوكب آخر.",
+          fr: "Prendre une carte et sauter dans un portail vers un autre monde."
         },
         scores: { adventure: 2 }
       }
@@ -44,40 +44,40 @@ export const questions = [
   {
     id: 2,
     text: {
-      en: "You are late for the first day of school! How are you getting there?",
-      ar: "لقد تأخرت عن اليوم الأول في المدرسة! كيف ستصل إلى هناك؟",
-      fr: "Tu es en retard pour le premier jour d'école ! Comment tu y vas ?"
+      en: "You're late for the first day of school! How do you rush there?",
+      ar: "تأخرت عن أول يوم في المدرسة! كيف تصل؟",
+      fr: "En retard le premier jour d'école ! Comment tu y vas ?"
     },
     options: [
       {
         text: {
-          en: "Running with a full slice of toast in my mouth while crying 'I'm late, I'm late!'",
-          ar: "أركض وفي فمي قطعة توست وأنا أصرخ باكياً: 'لقد تأخرت، لقد تأخرت!'",
-          fr: "Courir avec une tartine dans la bouche en criant 'Je suis en retard, je suis en retard !'"
+          en: "Run with toast in my mouth screaming 'I'm late!'",
+          ar: "أركض وفي فمي توست وأصرخ: 'أنا متأخر!'",
+          fr: "Courir une tartine en bouche en criant 'Je suis en retard !'"
         },
         scores: { comedy: 2 }
       },
       {
         text: {
-          en: "Sprint across telephone wires, doing backflips over traffic to look cool.",
-          ar: "أركض بسرعة خارقة فوق أسلاك الهاتف وأقوم بشقلبات خلفية فوق السيارات لأبدو رائعاً.",
-          fr: "Courir sur les câbles téléphoniques en faisant des saltos au-dessus des voitures."
+          en: "Parkour across power lines and backflip over traffic.",
+          ar: "أركض فوق أسلاك الهاتف وأقفز بشقلبة فوق السيارات.",
+          fr: "Faire du parkour sur les câbles et sauter par-dessus les voitures."
         },
         scores: { action: 2 }
       },
       {
         text: {
-          en: "Suddenly spin around in a magical flash of light and teleport there in a beautiful outfit.",
-          ar: "أدور فجأة في ومضة ضوء سحرية لأجد نفسي هناك مرتدياً ملابس براقة وجميلة.",
-          fr: "Tourner sur moi-même dans un flash magique et me téléporter là-bas dans une tenue magnifique."
+          en: "Do a magical transformation spin and teleport in style.",
+          ar: "أدور في ومضة سحرية وأصل بملابس براقة.",
+          fr: "M'envoler dans une transformation magique et me téléporter."
         },
         scores: { zumorroda: 2 }
       },
       {
         text: {
-          en: "Crawl there slowly because I am a literal giant baby holding a massive lollipop.",
-          ar: "أزحف ببطء شديد لأنني طفل عملاق أحمل مصاصة حلوى ضخمة.",
-          fr: "Ramper lentement parce que je suis un bébé géant avec une énorme sucette."
+          en: "Crawl slowly because I'm a giant baby with a giant lollipop.",
+          ar: "أزحف ببطء لأنني طفل عملاق يحمل مصاصة ضخمة.",
+          fr: "Ramper doucement car je suis un bébé géant avec une sucette."
         },
         scores: { bonbon: 2 }
       }
@@ -86,40 +86,40 @@ export const questions = [
   {
     id: 3,
     text: {
-      en: "An evil villain corners you and starts a 10-minute dramatic speech. What is your reaction?",
-      ar: "شرير خارق يحاصرك ويبدأ في إلقاء خطبة درامية مدتها 10 دقائق. ماذا تفعل؟",
-      fr: "Un grand méchant te coince et commence un discours dramatique de 10 devoirs. Tu fais quoi ?"
+      en: "A villain traps you and starts a long speech. What's your move?",
+      ar: "شرير يحاصرك ويبدأ بالحديث المطوّل. ماذا تفعل؟",
+      fr: "Un méchant te coince et commence un long discours. Tu fais quoi ?"
     },
     options: [
       {
         text: {
-          en: "Cross my arms in the shadows, wait for my epic orchestral theme song to drop, then smirk.",
-          ar: "أقوم بطي ذراعي في الظلال، وأنتظر نزول موسيقتي التصويرية الملحمية، ثم أبتسم بثقة.",
-          fr: "Croiser les bras dans l'ombre, attendre que mon thème musical orchestral démarre, puis ricaner."
+          en: "Cross my arms, wait for my theme song, then smirk.",
+          ar: "أطوي ذراعيّ بثقة وأنتظر بدء موسيقتي التصويرية.",
+          fr: "Croiser les bras, attendre ma musique et sourire."
         },
         scores: { movies: 2 }
       },
       {
         text: {
-          en: "Sneakily eat snacks from a brightly colored bag and loudly crunch during their monologue.",
-          ar: "آكل وجبات خفيفة بالخفاء من كيس ملون وأقرمش بصوت عالٍ جداً أثناء حديثه.",
-          fr: "Manger discrètement des chips d'un sachet coloré en faisant un bruit de croquement insupportable."
+          en: "Loudly crunch snacks during their dramatic monologue.",
+          ar: "آكل وجبات خفيفة وأقرمش بصوت عالٍ أثناء كلامه.",
+          fr: "Manger des chips en faisant du bruit pendant qu'il parle."
         },
         scores: { comedy: 2 }
       },
       {
         text: {
-          en: "Interrupt them to point out that their grammar and sentence structure is completely incorrect.",
-          ar: "أقاطعه في المنتصف لأوضح له أن قواعده النحوية وتركيب جملته الإملائي خاطئ تماماً.",
-          fr: "L'interrompre pour lui signaler que sa grammaire et sa structure de phrase sont totalement incorrectes."
+          en: "Interrupt them to correct their terrible grammar.",
+          ar: "أقاطعه لأصحح أخطاءه النحوية والإملائية.",
+          fr: "L'interrompre pour corriger sa grammaire."
         },
         scores: { abjad: 2 }
       },
       {
         text: {
-          en: "Hold hands with my friends to summon the magical power of eternal bonding stars.",
-          ar: "أمسك بأيدي أصدقائي لنستدعي معاً طاقة النجوم السحرية للروابط والصداقة الأبدية.",
-          fr: "Tenir les mains de mes amis pour invoquer le pouvoir magique des étoiles de l'amitié éternelle."
+          en: "Hold hands with friends to summon friendship energy.",
+          ar: "أمسك أيدي أصدقائي ونستدعي قوة الصداقة والنجوم.",
+          fr: "Tenir la main de mes amis pour invoquer la magie de l'amitié."
         },
         scores: { zumorroda: 2 }
       }
@@ -128,40 +128,40 @@ export const questions = [
   {
     id: 4,
     text: {
-      en: "You open your school locker, but instead of books, you find a mysterious item! What is it?",
-      ar: "تفتح خزانتك المدرسية، ولكن بدلاً من الكتب، تجد غرضاً غامضاً! ما هو؟",
-      fr: "Tu ouvres ton casier, mais au lieu des livres, tu trouves un objet mystérieux ! Qu'est-ce que c'est ?"
+      en: "You open your locker and find a mysterious item! What is it?",
+      ar: "فتحت خزانتك ووجدت غرضاً غامضاً! ما هو؟",
+      fr: "Tu ouvres ton casier et trouves un objet mystérieux ! C'est quoi ?"
     },
     options: [
       {
         text: {
-          en: "An ancient dusty scroll containing a forgotten royal prophecy written in gold.",
-          ar: "مخطوطة قديمة مغبرة تحتوي على نبوءة ملكية منسية مكتوبة بماء الذهب.",
-          fr: "Un vieux parchemin poussiéreux contenant une prophétie royale oubliée écrite en lettres d'or."
+          en: "An ancient scroll with a forgotten royal prophecy.",
+          ar: "مخطوطة أثرية فيها نبوءة ملكية منسية.",
+          fr: "Un vieux parchemin contenant une prophétie royale."
         },
         scores: { history: 2 }
       },
       {
         text: {
-          en: "A legendary treasure map showing uncharted islands and a glowing skull landmark.",
-          ar: "خريطة كنز أسطورية توضح جزراً غير مكتشفة وعلامة جمجمة مشعة.",
-          fr: "Une carte au trésor légendaire indiquant des îles inconnues et un repère en forme de crâne."
+          en: "A pirate treasure map leading to uncharted islands.",
+          ar: "خريطة كنز أسطورية تجرّنا لجزيرة مجهولة.",
+          fr: "Une carte au trésor menant à une île inconnue."
         },
         scores: { adventure: 2 }
       },
       {
         text: {
-          en: "A tiny cyber-core reactor engine built with quantum microchips.",
-          ar: "محرك مفاعل إلكتروني صغير جداً مبني برقاقات الكمومية المتطورة.",
-          fr: "Un minuscule réacteur cyber-core construit avec des puces quantiques."
+          en: "A quantum-powered cyber engine core.",
+          ar: "محرك طاقة كمومي متطور جداً.",
+          fr: "Un réacteur cybernétique quantique."
         },
         scores: { science: 2 }
       },
       {
         text: {
-          en: "The ancient official bracket brackets for the ultimate universe basketball tournament.",
-          ar: "جدول التصفيات القديم الرسمي لبطولة كرة السلة الكونية الكبرى لإنقاذ المجرة.",
-          fr: "Le calendrier officiel antique du tournoi de basket-ball ultime pour sauver l'univers."
+          en: "The bracket chart for the Universal Basketball Tournament.",
+          ar: "جدول تصفيات بطولة السلة الكونية الكبرى.",
+          fr: "Le calendrier du grand tournoi de basket universel."
         },
         scores: { sport: 2 }
       }
@@ -170,40 +170,40 @@ export const questions = [
   {
     id: 5,
     text: {
-      en: "Your best friend is completely devastated because they failed an exam. How do you fix it?",
-      ar: "صديقك المفضل محطم تماماً لأنه رسب في الامتحان. كيف تصلح هذا الموقف؟",
-      fr: "Ton meilleur ami est dévasté parce qu'il a raté un examen. Comment règles-tu ça ?"
+      en: "Your best friend is sad about failing a test. How do you cheer them up?",
+      ar: "صديقك حزين بسبب رسوبه في الاختبار. كيف تسانده؟",
+      fr: "Ton ami est triste d'avoir raté un examen. Que fais-tu ?"
     },
     options: [
       {
         text: {
-          en: "Give them a 5-minute speech about how true victory lives inside our sweaty, hardworking hearts.",
-          ar: "ألقي عليه خطبة مدتها 5 دقائق حول كيف أن النصر الحقيقي يعيش داخل قلوبنا الكادحة المليئة بالإصرار.",
-          fr: "Lui faire un discours de 5 minutes sur la façon dont la vraie victoire vit dans nos cœurs courageux."
+          en: "Give a passionate speech about working hard and never giving up.",
+          ar: "ألقي خطبة حماسية عن الإصرار وعدم الاستسلام.",
+          fr: "Faire un discours passionné sur la détermination et l'effort."
         },
         scores: { sport: 2 }
       },
       {
         text: {
-          en: "Slip on an invisible banana peel and crash into a wall so they laugh at my pain.",
-          ar: "أتزحلق على قشرة موز غير مرئية وأصطدم بالحائط عمداً ليضحك على ألمي وينسى حزنه.",
-          fr: "Glisser sur une peau de banane invisible et s'écraser contre un mur pour le faire rire."
+          en: "Slip on a banana peel on purpose to make them laugh.",
+          ar: "أتزحلق على قشرة موز بالخطأ عمداً ليضحك.",
+          fr: "Glisser sur une peau de banane pour le faire rire."
         },
         scores: { comedy: 2 }
       },
       {
         text: {
-          en: "Lock them in a room with 500 library books and force them to memorize the whole dictionary.",
-          ar: "أحبسه في غرفة بها 500 كتاب من المكتبة وأجبره على حفظ القاموس بالكامل ليتفوق المرة القادمة.",
-          fr: "Le verrouiller dans une pièce avec 500 livres et le forcer à mémoriser tout le dictionnaire."
+          en: "Lock us in the library to memorize the whole dictionary.",
+          ar: "أحبسه في المكتبة ونحفظ القاموس معاً للمرة القادمة.",
+          fr: "Révisez ensemble dans la bibliothèque jusqu'à tout savoir."
         },
         scores: { abjad: 2 }
       },
       {
         text: {
-          en: "Hand them a single sparkling flower while a gentle acoustic guitar tracks out of nowhere.",
-          ar: "أقدم له زهرة واحدة براقة بينما تبدأ موسيقى غيتار هادئة بالعزف في الخلفية من لا مكان.",
-          fr: "Lui tendre une fleur étincelante alors qu'une douce guitare acoustique résonne de nulle part."
+          en: "Hand them a single rose while soft music plays out of nowhere.",
+          ar: "أقدم له زهرة لطيفة مع موسيقى هادئة من لا مكان.",
+          fr: "Lui offrir une fleur avec une musique douce en fond."
         },
         scores: { zumorroda: 1, bonbon: 1 }
       }
@@ -212,40 +212,40 @@ export const questions = [
   {
     id: 6,
     text: {
-      en: "You find a mysterious button on your desk that says 'Do Not Press'. What do you do?",
-      ar: "وجدت زراً غامضاً على مكتبك مكتوباً عليه 'لا تضغط'. ماذا تفعل؟",
-      fr: "Tu trouves un bouton mystérieux sur ton bureau avec écrit 'Ne pas appuyer'. Tu fais quoi ?"
+      en: "You find a button marked 'DO NOT PRESS'. What do you do?",
+      ar: "وجدت زراً مكتوباً عليه 'لا تضغط'. ماذا تفعل؟",
+      fr: "Tu trouves un bouton 'NE PAS APPUYER'. Que fais-tu ?"
     },
     options: [
       {
         text: {
-          en: "Press it immediately! I need to know if it launches a rocket or initiates an anime explosion.",
-          ar: "أضغطه فوراً! يجب أن أعرف ما إذا كان يطلق صاروخاً كبيراً أو يتسبب في انفجار كرتوني هائل.",
-          fr: "Appuyer dessus immédiatement ! Je dois savoir si ça lance une fusée ou une explosion d'anime."
+          en: "Press it immediately! I need to know what happens.",
+          ar: "أضغطه فوراً! يجب أن أعرف ما سيحدث.",
+          fr: "Appuyer immédiatement ! Il faut que je sache."
         },
         scores: { action: 1, adventure: 1 }
       },
       {
         text: {
-          en: "Build an electronic force-field containment unit around it to measure its thermal radiation.",
-          ar: "أبني وحدة احتواء لحقل طاقة إلكتروني حوله لقياس الإشعاع الحراري المنبعث منه.",
-          fr: "Construire un champ de force électronique tout autour pour mesurer ses radiations thermiques."
+          en: "Build a force-field shield around it to analyze its output.",
+          ar: "أبني حقل حماية حوله لتحليل إشعاعاته أولاً.",
+          fr: "Construire un champ de force autour pour l'analyser."
         },
         scores: { science: 2 }
       },
       {
         text: {
-          en: "Paint it pink, decorate it with stickers, and turn it into a cute candy-holder plate.",
-          ar: "أقوم بطلائه باللون الوردي، تزيينه بالملصقات اللامعة، وتحويله إلى طبق لطيف لحفظ الحلوى.",
-          fr: "Le peindre en rose, le décorer avec des autocollants et le transformer en boîte à bonbons mignonne."
+          en: "Paint it pink, add stickers, and turn it into a candy bowl.",
+          ar: "أطليه بالوردي وأحوله لوعاء حلوى لطيف.",
+          fr: "Le peindre en rose et le transformer en boîte à bonbons."
         },
         scores: { bonbon: 2 }
       },
       {
         text: {
-          en: "Research through 10 kilograms of ancient school records to find out who built this desk.",
-          ar: "أبحث في 10 كيلوغرامات من سجلات المدرسة القديمة لمعرفة من قام بصنع هذا المكتب الأثري.",
-          fr: "Fouiller dans 10 kilos d'archives scolaires anciennes pour découvrir qui a fabriqué ce bureau."
+          en: "Research old school archives to uncover who built it.",
+          ar: "أبحث في الأرشيف القديم لمعرفة من وضعه هنا.",
+          fr: "Fouiller les archives historiques pour savoir qui l'a posé là."
         },
         scores: { history: 2 }
       }
@@ -254,40 +254,40 @@ export const questions = [
   {
     id: 7,
     text: {
-      en: "Your team is losing the ultimate championship match by 20 points! What is your final strategy?",
-      ar: "فريقك يخسر المباراة النهائية الحاسمة بفارق 20 نقطة كاملة! ما هي خطتك الأخيرة؟",
-      fr: "Ton équipe perd le match de championnat ultime de 20 points ! Quelle est ta stratégie ?"
+      en: "Your team is losing by 20 points! What is your final play?",
+      ar: "فريقك متأخر بـ 20 نقطة! ما هي خطتك الأخيرة؟",
+      fr: "Ton équipe perd de 20 points ! Ta stratégie finale ?"
     },
     options: [
       {
         text: {
-          en: "Unleash my hidden inner power, make my eyes glow brightly, and score continuously.",
-          ar: "أطلق قوتي الداخلية الكامنة، وأجعل عيني تشعان بضوء قوي، وأسجل الأهداف دون توقف.",
-          fr: "Libérer mon pouvoir caché, faire briller mes yeux et marquer des points en boucle."
+          en: "Awaken my hidden inner power and score back-to-back.",
+          ar: "أطلق قوتي الداخلية الكامنة وأسجل نقاطاً متتالية.",
+          fr: "Éveiller mon pouvoir caché et enchaîner les points."
         },
         scores: { action: 2 }
       },
       {
         text: {
-          en: "Shed a dramatic tear, remember a flashback of our intense training, and win using teamwork.",
-          ar: "أذرف دمعة درامية، وأتذكر لقطة ماضية لتدريباتنا القاسية، ثم نفوز بالاعتماد على قوة الفريق.",
-          fr: "Verser une larme, revoir un flashback de notre entraînement et gagner grâce au travail d'équipe."
+          en: "Remember a training flashback and win with teamwork.",
+          ar: "أتذكر ذكريات تدريباتنا القاسية ونفوز بقوة الفريق.",
+          fr: "Se rappeler un flashback d'entraînement et gagner en équipe."
         },
         scores: { sport: 2, movies: 1 }
       },
       {
         text: {
-          en: "Compute the exact mathematical trajectory to bounce the ball off 3 walls directly into the net.",
-          ar: "أحسب المسار الرياضي الدقيق لجعل الكرة ترتد من 3 جدران وتدخل الشبكة مباشرة.",
-          fr: "Calculer la trajectoire mathématique exacte pour faire rebondir la balle sur 3 murs jusqu'au filet."
+          en: "Calculate the exact angle to bounce the ball off 3 walls into the net.",
+          ar: "أحسب زاوية الارتداد الدقيقة لتدخل الكرة المرمى.",
+          fr: "Calculer l'angle parfait pour faire rebondir le ballon."
         },
         scores: { science: 2 }
       },
       {
         text: {
-          en: "Accidentally trip over my own shoelaces but the ball bounces off my head and scores anyway.",
-          ar: "أتعثر برباط حذائي بالخطأ لترتد الكرة من رأسي وتسجل هدفاً عجيباً يقلب الموازين وسط ذهول الجميع.",
-          fr: "Trébucher accidentellement sur mes lacets, mais voir la balle rebondir sur ma tête et marquer."
+          en: "Trip on my laces, but the ball accidentally bounces off my head into the goal.",
+          ar: "أتعثر برباط حذائي وترتد الكرة من رأسي إلى الهدف بالصدفة.",
+          fr: "Trébucher sur mes lacets, mais marquer avec la tête sans le vouloir."
         },
         scores: { comedy: 2 }
       }
@@ -296,40 +296,40 @@ export const questions = [
   {
     id: 8,
     text: {
-      en: "A massive, ancient stone gate blocks your pathway during a field trip. How do you open it?",
-      ar: "بوابة حجرية أثرية ضخمة تسد طريقك أثناء رحلة ميدانية. كيف تفتحها؟",
-      fr: "Une immense porte de pierre antique bloque ton chemin pendant une sortie. Comment l'ouvres-tu ?"
+      en: "An ancient stone gate blocks your path. How do you open it?",
+      ar: "بوابة حجرية أثرية تسد طريقك. كيف تفتحها؟",
+      fr: "Une porte de pierre antique bloque le passage. Comment l'ouvres-tu ?"
     },
     options: [
       {
         text: {
-          en: "Translate the cryptic glyphs carved on the frame using my deep language skills.",
-          ar: "أترجم الرموز والنقوش الغامضة المحفورة على إطار البوابة باستخدام مهاراتي اللغوية الواسعة.",
-          fr: "Traduire les glyphes cryptiques gravés sur le cadre grâce à mes compétences en langues."
+          en: "Translate the ancient hieroglyphs on the frame.",
+          ar: "أترجم النقوش والرموز القديمة المحفورة عليها.",
+          fr: "Traduire les hiéroglyphes gravés dessus."
         },
         scores: { abjad: 2 }
       },
       {
         text: {
-          en: "Solve the multi-layered mechanical locking puzzle hidden in the center of the mechanism.",
-          ar: "أحل لغز القفل الميكانيكي متعدد الطبقات المخفي في وسط آلية البوابة.",
-          fr: "Résoudre l'énigme du verrou mécanique multicouche caché au centre du mécanisme."
+          en: "Solve the mechanical gear puzzle hidden inside.",
+          ar: "أحل لغز التروس الميكانيكية المخبأة بالداخل.",
+          fr: "Résoudre l'énigme des engrenages cachés."
         },
         scores: { science: 2 }
       },
       {
         text: {
-          en: "Use an ancient amulet I found in my grandfather's attic to make the stone door slide open.",
-          ar: "أستخدم قلادة أثرية وجدتها في علية جدي لجعل البوابة الحجرية تفتح تلقائياً بسحر قديم.",
-          fr: "Utiliser une amulette ancienne trouvée chez mon grand-père pour faire glisser la porte."
+          en: "Use an ancient amulet from my grandfather's collection.",
+          ar: "أستخدم قلادة أثرية ورثتها من جدي.",
+          fr: "Utiliser une amulette ancienne trouvée chez mon grand-père."
         },
         scores: { history: 2, adventure: 1 }
       },
       {
         text: {
-          en: "Blow it up with a highly explosive energy blast while looking incredibly cinematic.",
-          ar: "أقوم بتفجيرها بالكامل بضربة طاقة متفجرة خارقة بينما أبدو سينمائياً للغاية والرياح تحرك شعري.",
-          fr: "La faire sauter avec une explosion d'énergie destructrice tout en restant incroyablement stylé."
+          en: "Blast it open with a massive energy beam.",
+          ar: "أفجر البوابة بضربة طاقة خارقة ومؤثرات سينمائية.",
+          fr: "La faire exploser avec un rayon d'énergie spectaculaire."
         },
         scores: { action: 1, movies: 1 }
       }
@@ -338,40 +338,40 @@ export const questions = [
   {
     id: 9,
     text: {
-      en: "You are selected to direct the school's final annual theater play! What genre is it?",
-      ar: "تم اختيارك لإخراج المسرحية السنوية النهائية للمدرسة! ما هو نوعها؟",
-      fr: "Tu es choisi pour mettre en scène la pièce de théâtre de l'école ! Quel est son genre ?"
+      en: "You're directing the school play! What genre is it?",
+      ar: "أنت مخرج المسرحية المدرسية! ما نوع العرض؟",
+      fr: "Tu es le metteur en scène de la pièce de l'école ! Quel genre ?"
     },
     options: [
       {
         text: {
-          en: "A grand epic masterpiece filled with slow-motion fighting scenes and smoke machines.",
-          ar: "عمل فني ملحمي ضخم مليء بمشاهد القتال بالحركة البطيئة وآلات الدخان الدرامية.",
-          fr: "Un chef-d'œuvre épique grandiose rempli de combats au ralenti et de machines à fumée."
+          en: "An action epic with slow-motion fights and smoke effects.",
+          ar: "ملحمة أكشن مليئة بالقتال البطيء وآلات الدخان.",
+          fr: "Un film d'action épique avec ralentis et fumigènes."
         },
         scores: { movies: 2, action: 1 }
       },
       {
         text: {
-          en: "A slapstick comedy performance where people get hit by giant fake mallets every 2 minutes.",
-          ar: "عرض كوميدي ساخر حيث يضرب الممثلون بعضهم بمطارق بلاستيكية ضخمة كل دقيقتين.",
-          fr: "Une comédie burlesque où les acteurs se prennent des coups de marteau géant toutes les 2 minutes."
+          en: "A goofy comedy where everyone hits each other with squeaky mallets.",
+          ar: "كوميديا ساخرة يتضارب فيها الممثلون بمطارق بلاستيكية.",
+          fr: "Une comédie délirante où tout le monde se tape avec des marteaux en mousse."
         },
         scores: { comedy: 2 }
       },
       {
         text: {
-          en: "A beautiful, touching musical about friendship with sparkling lights and gorgeous custom costumes.",
-          ar: "مسرحية غنائية مؤثرة وجميلة عن الصداقة والوفاء بأضواء براقة وأزياء مخصصة رائعة.",
-          fr: "Une magnifique comédie musicale sur l'amitié avec des lumières scintillantes et de superbes costumes."
+          en: "A beautiful musical about friendship with glowing sparkles and costumes.",
+          ar: "عرض غنائي جميل عن الصداقة بأزياء ملونة وأضواء مشعة.",
+          fr: "Une comédie musicale magique sur l'amitié avec de supers costumes."
         },
         scores: { zumorroda: 2, bonbon: 1 }
       },
       {
         text: {
-          en: "A strict historical reenactment of a legendary battle using precise replicas of old armor.",
-          ar: "إعادة تجسيد تاريخية دقيقة لمعركة تاريخية أسطورية باستخدام نسخ متطابقة تماماً من الدروع القديمة.",
-          fr: "Une reconstitution historique d'une bataille légendaire avec des répliques exactes d'armures."
+          en: "A strict historical reenactment with realistic ancient armor.",
+          ar: "تجسيد تاريخي دقيق لمعركة قديمة بدروع حقيقية.",
+          fr: "Une reconstitution historique précise avec de vraies armures."
         },
         scores: { history: 2 }
       }
@@ -380,40 +380,40 @@ export const questions = [
   {
     id: 10,
     text: {
-      en: "You win a free trip to anywhere in the cosmos! Where are you traveling first?",
-      ar: "لقد ربحت رحلة مجانية إلى أي مكان في الكون الفسيح! إلى أين ستسافر أولاً؟",
-      fr: "Tu gagnes un voyage gratuit n'importe où dans le cosmos ! Où vas-tu en premier ?"
+      en: "You win a free space trip! Where are you going first?",
+      ar: "ربحت رحلة مجانية إلى الفضاء! إلى أين تسافر أولاً؟",
+      fr: "Tu gagnes un voyage gratuit dans l'espace ! Où vas-tu ?"
     },
     options: [
       {
         text: {
-          en: "An uncharted jungle planet filled with dangerous alien creatures and hidden ruins.",
-          ar: "كوكب غابات مجهول تماماً مليء بكائنات فضائية خطيرة وأنقاض منسية تحتاج إلى استكشاف.",
-          fr: "Une planète jungle inexplorée remplie de créatures extraterrestres et de ruines cachées."
+          en: "An unexplored jungle planet with alien creatures and ancient ruins.",
+          ar: "كوكب غابات مجهول مليء بالحيوانات الفضائية والأنقاض.",
+          fr: "Une planète jungle inexplorée avec des créatures alien et des ruines."
         },
         scores: { adventure: 2 }
       },
       {
         text: {
-          en: "The high-tech neon capital metropolis of the galaxy to see giant flying racing ships.",
-          ar: "عاصمة المجرة المتطورة المليئة بأضواء النيون لمشاهدة مركبات السباق الطائرة الضخمة.",
-          fr: "La capitale high-tech de la galaxie pour voir des vaisseaux de course géants voler."
+          en: "A high-tech neon metropolis with flying racing ships.",
+          ar: "مدينة مستقبلية مليئة بأضواء النيون والمركبات الطائرة.",
+          fr: "Une métropole high-tech remplie de vaisseaux de course."
         },
         scores: { science: 2 }
       },
       {
         text: {
-          en: "A peaceful pastel world made completely of giant fluffy cotton candy and chocolate rivers.",
-          ar: "عالم هادئ بألوان الباستيل مصنوع بالكامل من غزل البنات الضخم وشوكولاتة سائلة جارية.",
-          fr: "Un monde pastel paisible entièrement fait de barbe à papa géante et de rivières de chocolat."
+          en: "A sweet pastel world made of cotton candy and chocolate rivers.",
+          ar: "عالم ناعم بألوان الباستيل مصنوع من غزل البنات والشوكولاتة.",
+          fr: "Un monde pastel en barbe à papa avec des rivières de chocolat."
         },
         scores: { bonbon: 2, zumorroda: 1 }
       },
       {
         text: {
-          en: "The legendary interstellar martial arts stadium to watch the ultimate universe fighters.",
-          ar: "إستاد الفنون القتالية الأسطوري العابر للنجوم لمشاهدة أقوى مقاتلي الكون يتواجهون.",
-          fr: "Le légendaire stade d'arts martiaux interstellaire pour voir s'affronter les meilleurs guerriers."
+          en: "An interstellar stadium to watch the universe's top martial artists fight.",
+          ar: "حلبة فضائية لمشاهدة أبطال الفنون القتالية في الكون.",
+          fr: "Un stade stellaire pour voir s'affronter les plus grands combattants."
         },
         scores: { action: 1, sport: 1 }
       }

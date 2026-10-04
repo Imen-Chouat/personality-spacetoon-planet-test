@@ -21,7 +21,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 w-full py-4 px-6 border-b border-white/10 bg-slate-950/60 backdrop-blur-md z-[100] flex justify-between items-center shadow-lg">
+    <header className="fixed top-0 left-0 w-full py-0 px-6 border-b border-white/10 bg-slate-950/60 backdrop-blur-md z-[100] flex justify-between items-center shadow-lg">
       
       <div className="flex-1 flex justify-start items-center">
         <div className="flex items-center gap-3 select-none">
@@ -44,7 +44,7 @@ export default function Header() {
         </p>
       </div>
       <div className="flex-1 flex justify-end items-center">
-        <div className="flex items-center bg-slate-950/60 p-1.5 rounded-2xl border border-white/5 gap-2 shadow-inner">
+        <div className="flex items-center bg-slate-950/60 p-1 rounded-2xl border border-white/5 gap-2 shadow-inner">
           {languageOptions.map((opt) => {
             const isActive = lang === opt.code;
             return (
