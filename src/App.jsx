@@ -119,11 +119,11 @@ export default function App() {
         <StarCollisionReveal planetConfig={planetConfig} />
       )}
 
-      <main className="w-full flex-grow flex flex-col items-center justify-center px-3 sm:px-6 md:px-8 py-4 sm:py-8 z-10 select-none">
+      <main className="w-full flex-grow flex flex-col items-center justify-start sm:justify-center px-3 sm:px-6 md:px-8 py-3 sm:py-8 z-10 select-none">
         
         {!quizStarted ? (
           /* Landing Screen */
-          <div className="w-full max-w-[320px] xs:max-w-[380px] sm:max-w-[480px] md:max-w-[540px] flex flex-col items-center justify-center transition-none">
+          <div className="w-full max-w-[320px] xs:max-w-[380px] sm:max-w-[480px] md:max-w-[540px] flex flex-col items-center justify-center transition-none my-auto">
             <img 
               src={currentTvAsset} 
               alt="Spacetoon TV Landing" 
@@ -131,7 +131,7 @@ export default function App() {
             />
             <button
               onClick={() => setQuizStarted(true)}
-              className={`px-6 sm:px-8 py-3 sm:py-3.5 text-xs sm:text-sm text-slate-950 bg-cyan-400 hover:bg-cyan-300 rounded-full cursor-pointer uppercase tracking-wider shadow-[0_4px_12px_rgba(34,211,238,0.3)] active:scale-95 transition-transform duration-100 ${getHeadingFont()}`}
+              className={`px-7 sm:px-8 py-3.5 sm:py-3.5 text-sm sm:text-base text-slate-950 bg-cyan-400 hover:bg-cyan-300 rounded-full cursor-pointer uppercase tracking-wider shadow-[0_4px_12px_rgba(34,211,238,0.3)] active:scale-95 transition-transform duration-100 ${getHeadingFont()}`}
             >
               {uiStrings.startScreen.btn[lang]}
             </button>
@@ -139,52 +139,56 @@ export default function App() {
         ) : !showResult ? (
           
           /* Quiz Screen */
-          <div className="w-full max-w-xl flex flex-col items-center transition-none px-2 sm:px-0">
-            {/* Progress Bar */}
-            <div className="w-full bg-indigo-950/60 border border-purple-500/20 h-2 sm:h-2.5 rounded-full mb-4 sm:mb-8 overflow-hidden shadow-inner">
-              <div 
-                className="bg-cyan-400 h-full border-r border-cyan-300 transition-all duration-300"
-                style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
-              ></div>
+          <div className="w-full max-w-xl flex flex-col items-center transition-none px-1 sm:px-0 my-auto">
+            
+            {/* FIXED ANCHORED PROGRESS BAR CONTAINER */}
+            <div className="w-full flex flex-col items-center mb-3 sm:mb-6">
+              <div className="w-full bg-indigo-950/80 border border-purple-500/30 h-2.5 sm:h-3 rounded-full overflow-hidden shadow-inner">
+                <div 
+                  className="bg-cyan-400 h-full border-r border-cyan-200 transition-all duration-300 shadow-[0_0_8px_rgba(34,211,238,0.8)]"
+                  style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
+                ></div>
+              </div>
+
+              <div className="mt-2 text-center">
+                <span className={`text-xs sm:text-sm text-cyan-300 font-bold drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] ${getHeadingFont()}`}>
+                  {uiStrings.quizScreen.scenario[lang]} {currentQuestion + 1} {uiStrings.quizScreen.of[lang]} {questions.length}
+                </span>
+              </div>
             </div>
 
-            <div className="mb-2 sm:mb-4">
-              <span className={`text-[10px] sm:text-xs text-cyan-400 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] ${getHeadingFont()}`}>
-                {uiStrings.quizScreen.scenario[lang]} {currentQuestion + 1} {uiStrings.quizScreen.of[lang]} {questions.length}
-              </span>
-            </div>
-
-            {/* Question Card */}
-            <div className="w-full bg-indigo-950/40 backdrop-blur-md border border-purple-500/30 rounded-xl sm:rounded-2xl p-4 sm:p-8 text-center shadow-[0_0_25px_rgba(147,51,234,0.15)] mb-4 sm:mb-8">
-              <h2 className="text-base sm:text-2xl md:text-3xl font-bold text-white leading-relaxed sm:leading-snug drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            {/* Question Card - Fixed Minimum Height to avoid jumps */}
+            <div className="w-full min-h-[110px] sm:min-h-[140px] flex items-center justify-center bg-indigo-950/60 backdrop-blur-md border border-purple-500/40 rounded-xl sm:rounded-2xl p-4 sm:p-8 text-center shadow-[0_0_25px_rgba(147,51,234,0.2)] mb-3 sm:mb-6">
+              <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-white leading-snug sm:leading-snug drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
                 {questions[currentQuestion].text[lang]}
               </h2>
             </div>
 
             {/* Options Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-4 w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 w-full">
               {questions[currentQuestion].options.map((option, index) => (
                 <button
                   key={index}
                   onClick={() => handleAnswerClick(option.scores)}
-                  className="w-full text-center font-semibold text-slate-100 p-3.5 sm:p-5 bg-indigo-900/40 hover:bg-purple-900/40 active:bg-cyan-400 active:text-slate-950 backdrop-blur-md border border-purple-500/20 hover:border-purple-400/40 rounded-lg sm:rounded-xl text-xs sm:text-base md:text-lg cursor-pointer shadow-md leading-snug sm:leading-normal drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)] transition-all duration-100"
+                  className="w-full text-center font-bold text-slate-100 p-4 sm:p-5 bg-indigo-950/70 hover:bg-purple-900/50 active:bg-cyan-400 active:text-slate-950 backdrop-blur-md border border-purple-500/30 hover:border-purple-400/50 rounded-xl text-sm sm:text-base md:text-lg cursor-pointer shadow-lg leading-snug sm:leading-normal drop-shadow-[0_1px_2px_rgba(0,0,0,0.6)] transition-all duration-100"
                 >
                   {option.text[lang]}
                 </button>
               ))}
             </div>
+
           </div>
         ) : (
           
           /* Result Screen */
-          <div className="w-full max-w-lg flex flex-col items-center text-center px-2 sm:px-0">
+          <div className="w-full max-w-lg flex flex-col items-center text-center px-2 sm:px-0 my-auto">
             
-            <h2 className={`text-base sm:text-2xl font-light text-slate-300 mb-1 sm:mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] animate-fade-in-down ${getHeadingFont()}`}>
+            <h2 className={`text-lg sm:text-2xl font-light text-slate-200 mb-2 sm:mb-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] animate-fade-in-down ${getHeadingFont()}`}>
               {uiStrings.resultScreen.destiny[lang]}
             </h2>
 
             {/* Planet Container */}
-            <div className="w-28 h-28 xs:w-36 xs:h-36 sm:w-48 sm:h-48 my-3 sm:my-6 relative flex items-center justify-center animate-planet-reveal">
+            <div className="w-32 h-32 xs:w-40 xs:h-40 sm:w-48 sm:h-48 my-3 sm:my-6 relative flex items-center justify-center animate-planet-reveal">
               <div 
                 className="absolute inset-0 rounded-full blur-xl sm:blur-2xl opacity-40 animate-pulse"
                 style={{ backgroundColor: planetConfig?.color }}
@@ -210,13 +214,13 @@ export default function App() {
 
             {/* Description Card */}
             <div 
-              className="bg-indigo-950/40 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-5 sm:mb-8 w-full max-w-md shadow-xl border animate-description-slide-up"
+              className="bg-indigo-950/60 backdrop-blur-md rounded-xl sm:rounded-2xl p-4 sm:p-6 mb-5 sm:mb-8 w-full max-w-md shadow-xl border animate-description-slide-up"
               style={{ 
                 borderColor: planetConfig?.color,
                 boxShadow: `0 0 20px ${planetConfig?.color}25`
               }}
             >
-              <p className={`text-xs sm:text-base md:text-lg text-slate-200 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)] ${getHeadingFont()}`}>
+              <p className={`text-sm sm:text-base md:text-lg text-slate-100 font-medium leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)] ${getHeadingFont()}`}>
                 {planetConfig?.desc[lang]}
               </p>
             </div>
@@ -224,7 +228,7 @@ export default function App() {
             {/* Reset Button */}
             <button
               onClick={resetQuiz}
-              className={`px-6 sm:px-8 py-3 sm:py-3.5 text-xs sm:text-sm font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 rounded-full cursor-pointer uppercase shadow-[0_4px_12px_rgba(34,211,238,0.3)] active:scale-95 transition-transform duration-100 animate-fade-in-up ${getHeadingFont()}`}
+              className={`px-7 sm:px-8 py-3.5 sm:py-3.5 text-sm sm:text-sm font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 rounded-full cursor-pointer uppercase shadow-[0_4px_12px_rgba(34,211,238,0.3)] active:scale-95 transition-transform duration-100 animate-fade-in-up ${getHeadingFont()}`}
             >
               {uiStrings.resultScreen.btn[lang]}
             </button>
