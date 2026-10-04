@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { questions, uiStrings, planets } from './data/questions';
 import { useLang } from './context/LanguageContext';
 import Layout from './components/Layout';
 
 // Sub-component for the 3 Stars Collision sequence
-function StarCollisionReveal({ planetConfig, onCollisionEnd }) {
+function StarCollisionReveal({ planetConfig }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/90 overflow-hidden pointer-events-none">
       {/* Central Expanding Bubble Flash */}
@@ -14,10 +14,7 @@ function StarCollisionReveal({ planetConfig, onCollisionEnd }) {
       />
 
       {/* Star 1 - Left */}
-      <div 
-        className="absolute w-16 h-16 sm:w-28 sm:h-28 text-amber-300 drop-shadow-[0_0_20px_rgba(251,191,36,0.9)] animate-star-collide-left"
-        onAnimationEnd={onCollisionEnd}
-      >
+      <div className="absolute w-16 h-16 sm:w-28 sm:h-28 text-amber-300 drop-shadow-[0_0_20px_rgba(251,191,36,0.9)] animate-star-collide-left">
         <svg viewBox="0 0 24 24" fill="currentColor" className="w-full h-full">
           <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
@@ -71,10 +68,24 @@ export default function App() {
     }
   };
 
-  const handleCollisionComplete = () => {
-    setIsRevealing(false);
-    setShowResult(true);
-  };
+  useEffect(() => {
+    if (isRevealing) {
+      // Swaps to result screen right as stars meet at 900ms
+      const timerShow = setTimeout(() => {
+        setShowResult(true);
+      }, 900);
+
+      // Clears collision overlay after animation finishes
+      const timerEnd = setTimeout(() => {
+        setIsRevealing(false);
+      }, 1200);
+
+      return () => {
+        clearTimeout(timerShow);
+        clearTimeout(timerEnd);
+      };
+    }
+  }, [isRevealing]);
 
   const getWinningPlanet = () => {
     return Object.keys(scores).reduce((a, b) => (scores[a] > scores[b] ? a : b));
@@ -103,12 +114,9 @@ export default function App() {
 
   return (
     <Layout>
-      {/* Star Collision & Flash Overlay */}
+      {/* Collision Overlay */}
       {isRevealing && (
-        <StarCollisionReveal 
-          planetConfig={planetConfig}
-          onCollisionEnd={handleCollisionComplete} 
-        />
+        <StarCollisionReveal planetConfig={planetConfig} />
       )}
 
       <main className="w-full flex-grow flex flex-col items-center justify-center px-3 sm:px-6 md:px-8 py-4 sm:py-8 z-10 select-none">
